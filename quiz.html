@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level 1 Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Level 1: Basic Quiz</h1>
+    <form>
+      <div class="question">
+        1. Who is the last prophet in Islam?
+      </div>
+      <ul class="options">
+        <li><label><input type="radio" name="q1"> Sayyidina Nabi Muhammad Sallallahu 'Alaihi Wa Sallam</label></li>
+        <li><label><input type="radio" name="q1"> Sayyidina Isa (Jesus)</label></li>
+        <li><label><input type="radio" name="q1"> Sayyidina Musa (Moses)</label></li>
+        <li><label><input type="radio" name="q1"> Sayyidina Ibrahim (Abraham)</label></li>
+      </ul>
+
+      <div class="question">
+        2. How many months are in the Islamic Calendar?
+      </div>
+      <ul class="options">
+        <li><label><input type="radio" name="q2"> 12</label></li>
+        <li><label><input type="radio" name="q2"> 10</label></li>
+        <li><label><input type="radio" name="q2"> 14</label></li>
+        <li><label><input type="radio" name="q2"> 11</label></li>
+      </ul>
+
+      <div class="question">
+        3. What is the third month in the Islamic Calendar?
+      </div>
+      <ul class="options">
+        <li><label><input type="radio" name="q3"> Rabi' ul Awwal</label></li>
+        <li><label><input type="radio" name="q3"> Rajab</label></li>
+        <li><label><input type="radio" name="q3"> Shawwal</label></li>
+        <li><label><input type="radio" name="q3"> Jumada al-Awwal</label></li>
+      </ul>
+
+      <div class="question">
+        4. What is the name of the Prophet's mother?
+      </div>
+      <ul class="options">
+        <li><label><input type="radio" name="q4"> Sayyidah Amina</label></li>
+        <li><label><input type="radio" name="q4"> Sayyidah Khadijah</label></li>
+        <li><label><input type="radio" name="q4"> Sayyidah Fatimah</label></li>
+        <li><label><input type="radio" name="q4"> Sayyidah Umm Salama</label></li>
+      </ul>
+
+      <div class="question">
+        5. What is the name of the Prophet's first wife?
+      </div>
+      <ul class="options">
+        <li><label><input type="radio" name="q5"> Sayyidatina Khadijah</label></li>
+        <li><label><input type="radio" name="q5"> Sayyidatina Aisha</label></li>
+        <li><label><input type="radio" name="q5"> Sayyidatina Hafsa</label></li>
+        <li><label><input type="radio" name="q5"> Sayyidatina Zaynab</label></li>
+      </ul>
+      <div id="score-container" style="display:none;">
+        <h2>Your Score: <span id="score">0</span> / 5</h2>
+        <button id="finish-btn" onclick="finishQuiz()">Finish Quiz</button>
+    </div>
+      <button type="submit">Next Level</button>
+    </form>
+  </div>
+</body>
+</html>

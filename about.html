@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important Things in Islam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>10 Important Things in Islam</h1>
+    </header>
+    <main class="content">
+        <div class="box" id="box1">
+            <h2>1. Shahada (Declaration of Faith)</h2>
+            <p>The Shahada is the testimony of faith: "There is no god but Allah, and Muhammad is the messenger of Allah."</p>
+        </div>
+        <div class="box" id="box2">
+            <h2>2. Five Pillars of Islam</h2>
+            <p>The Five Pillars are the core acts of worship: Shahada, Salah, Zakat, Sawm, and Hajj.</p>
+        </div>
+        <div class="box" id="box3">
+            <h2>3. Tawhid (Oneness of Allah)</h2>
+            <p>Tawhid refers to the belief in the oneness and uniqueness of Allah, without any partners.</p>
+        </div>
+        <div class="box" id="box4">
+            <h2>4. Prophethood (Nubuwwah)</h2>
+            <p>Muslims believe in the prophets sent by Allah, with the final prophet being Muhammad (PBUH).</p>
+        </div>
+        <div class="box" id="box5">
+            <h2>5. Qur'an (The Holy Book)</h2>
+            <p>The Qur'an is the literal word of Allah, revealed to Prophet Muhammad, and is the primary source of guidance for Muslims.</p>
+        </div>
+        <div class="box" id="box6">
+            <h2>6. Angels (Mala'ika)</h2>
+            <p>Muslims believe in angels who have various roles, including delivering revelations and recording deeds.</p>
+        </div>
+        <div class="box" id="box7">
+            <h2>7. Day of Judgment (Yawm al-Qiyamah)</h2>
+            <p>On the Day of Judgment, all individuals will be resurrected and judged by Allah for their deeds.</p>
+        </div>
+        <div class="box" id="box8">
+            <h2>8. Islamic Ethics and Morality</h2>
+            <p>Islam emphasizes high moral standards, such as honesty, kindness, and generosity in daily life.</p>
+        </div>
+        <div class="box" id="box9">
+            <h2>9. Jihad (Struggle or Striving)</h2>
+            <p>Jihad refers to the spiritual, moral, and physical struggle in the way of Allah, including striving for justice.</p>
+        </div>
+        <div class="box" id="box10">
+            <h2>10. Respect for Parents and Elders</h2>
+            <p>Islam stresses the importance of showing kindness and respect to parents and elders.</p>
+        </div>
+    </main>
+</body>
+</html>
+<style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+
+header {
+    background: #2c6b2f;
+    color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Content Styling */
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+/* Box Styling */
+.box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideUp 0.8s forwards;
+}
+
+/* Box Animations */
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.box h2 {
+    color: #2c6b2f;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Animation Delay for Sequential Appearance */
+#box1 {
+    animation-delay: 0.1s;
+}
+
+#box2 {
+    animation-delay: 0.2s;
+}
+
+#box3 {
+    animation-delay: 0.3s;
+}
+
+#box4 {
+    animation-delay: 0.4s;
+}
+
+#box5 {
+    animation-delay: 0.5s;
+}
+
+#box6 {
+    animation-delay: 0.6s;
+}
+
+#box7 {
+    animation-delay: 0.7s;
+}
+
+#box8 {
+    animation-delay: 0.8s;
+}
+
+#box9 {
+    animation-delay: 0.9s;
+}
+
+#box10 {
+    animation-delay: 1s;
+}
+</style>

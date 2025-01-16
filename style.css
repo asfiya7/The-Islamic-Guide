@@ -1,0 +1,622 @@
+/* General Reset */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'poppins', sans-serif;
+} 
+.header{
+   width: 100%;
+   min-height:100vh;
+   background-image: linear-gradient(rgb(158, 232, 219),rgb(17, 35, 31)); url("../downloads/d1.jpg");
+   background-position: center;
+   background-size: cover;
+   padding: 10px 10%;
+   overflow: hidden;
+}
+/* Body Styling */
+body {
+   font-family: 'Arial', sans-serif;
+   background-color: #002b1c; /* Dark green background */
+   color: white;
+   line-height: 1.6;
+}
+
+/* Header */
+header {
+   background-color: #004d2c;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+   border-bottom: 4px solid #006837;
+}
+
+header .logo {
+   display: flex;
+   align-items: center;
+}
+
+header .logo img {
+   border-radius: 50%;
+   margin-right: 10px;
+}
+
+header .logo h1 {
+   font-size: 24px;
+}
+
+header nav ul {
+   list-style: none;
+   display: flex;
+}
+
+header nav ul li {
+   margin: 0 15px;
+}
+
+header nav ul li a {
+   color: white;
+   text-decoration: none;
+   font-size: 18px;
+   transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+   color: #c8e6c9; /* Light green */
+}
+
+/* Hero Section */
+.hero {
+   text-align: center;
+   padding: 100px 20px;
+   background: linear-gradient(rgba(0, 43, 28, 0.8), rgba(0, 43, 28, 0.8)), url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+   color: white;
+}
+
+.hero h2 {
+   font-size: 40px;
+   margin-bottom: 20px;
+   text-shadow: 2px 2px 5px rgba(247, 249, 248, 0.895);
+}
+
+.hero p {
+   font-size: 18px;
+   margin-bottom: 30px;
+}
+
+#takeQuizButton {
+   padding: 10px 20px;
+   background-color: #007a4d;
+   color: rgb(255, 255, 255); /* White text for better contrast */
+   font-size: 18px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Slight text shadow for depth */
+   box-shadow: 2px 2px 8px rgb(0, 34, 13); /* Add a shadow for depth */
+   transition: background-color 0.3s ease, transform 0.3s ease;
+ }
+ 
+ #takeQuizButton:hover {
+   background-color: #005f3b; /* Darker green on hover */
+   transform: translateY(-2px); /* Lift effect */
+   box-shadow: 2px 4px 12px rgb(0, 34, 13); /* Stronger shadow on hover */
+ }
+ 
+ #takeQuizButton:active {
+   background-color: #004d33; /* Even darker green on click */
+   transform: translateY(0); /* No lift when clicked */
+   box-shadow: 1px 2px 8px rgb(0, 34, 13); /* Slightly reduced shadow */
+ }
+
+.hero .btn:hover {
+   background-color: #005f39;
+   transform: scale(1.1);
+}
+.container {
+   position: relative;
+   animation: slideLeft 2s forwards;
+}
+
+.moving-image {
+   position: absolute;
+   left: 0;
+   top: 100%;
+   transform: translateY(-100%);
+}
+
+@keyframes slideLeft {
+   from {
+       opacity: 0;
+       transform: translateX(-100%);
+   }
+   to {
+       opacity: 1;
+       transform: translateX(0);
+   }
+}
+.left-image, .right-image {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.left-image {
+   left: -200px; /* Start off the screen */
+   animation: slideInLeft 2s forwards;
+}
+
+.right-image {
+   right: -200px; /* Start off the screen */
+   animation: slideInRight 2s forwards;
+}
+
+@keyframes slideInLeft {
+   from {
+       transform: translateX(-100%) translateY(-50%);
+       opacity: 0;
+   }
+   to {
+       transform: translateX(0) translateY(-50%);
+       opacity: 1;
+   }
+}
+
+@keyframes slideInRight {
+   from {
+       transform: translateX(100%) translateY(-50%);
+       opacity: 0;
+   }
+   to {
+       transform: translateX(0) translateY(-50%);
+       opacity: 1;
+   }
+}
+
+img {
+   width: 200px;
+   height: auto;
+}
+img {
+   width: 200px;
+   height: auto;
+}
+/* About Section */
+.about {
+   padding: 50px 20px;
+   text-align: center;
+   background-color: #fafafa;
+}
+
+.about h2 {
+   font-size: 36px;
+   margin-bottom: 20px;
+   color: #f0f4f2;
+}
+
+.about p {
+   font-size: 18px;
+   margin-bottom: 20px;
+}
+
+.about .btn {
+   padding: 10px 20px;
+   background-color: #002c1b;
+   color: white;
+   text-decoration: none;
+   font-size: 18px;
+   border-radius: 5px;
+   box-shadow: 2px 2px 8px rgb(1, 61, 37);
+   transition: background-color 0.3s, transform 0.3s;
+}
+
+.about .btn:hover {
+   background-color: #81fecc;
+   transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+   background-color: #9effdb;
+   text-align: center;
+   padding: 10px;
+   color: white;
+}
+
+footer a {
+   color: #c8e6c9;
+   text-decoration: none;
+}
+
+footer a:hover {
+   text-decoration: underline;
+}
+/* 5 Pillars Section */
+.pillars {
+   padding: 50px 20px;
+   text-align: center;
+   background-color: rgb(0, 84, 57);
+   color: #002b1c; /* Dark green */
+}
+
+.pillars h1 {
+   font-size: 36px;
+   font-weight: bold;
+   color: #002b1c;
+}
+
+.pillars .subheading {
+   color: #002b1c; /* Dark green */
+   background-color: #002e19;
+   color: white;
+   display: inline-block;
+   padding: 5px 15px;
+   margin: 10px 0 20px 0;
+   font-size: 14px;
+   font-weight: bold;
+   border-radius: 5px;
+   text-transform: uppercase;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pillar-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 20px;
+   margin-top: 20px;
+}
+
+.pillar-box {
+   background-color: #f9f9f9;
+   padding: 20px;
+   border: 1px solid #e0e0e0;
+   border-radius: 10px;
+   text-align: center;
+   box-shadow: 2px 2px 8px rgb(0, 50, 34);
+   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pillar-box:hover {
+   transform: translateY(-10px);
+   color: #002b1c; /* Dark green */
+   color: #002b1c; /* Dark green */
+   box-shadow: 4px 4px 12px rgb(1, 47, 38);
+}
+
+.pillar-box h3 {
+   font-size: 20px;
+   color: #002b1c;
+   margin-bottom: 10px;
+}
+
+.pillar-box p {
+   font-size: 16px;
+   color: #4f4f4f;
+}
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #064b3b;
+   color: #fff;
+ }
+ .pillars {
+   text-align: center;
+   padding: 20px;
+ }
+ .pillars h1 {
+   margin-bottom: 10px;
+ }
+ .pillars .subheading {
+   margin-bottom: 20px;
+ }
+ .pillar-container {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   flex-wrap: wrap;
+ }
+ .pillar-box {
+   background: #fff;
+   color: #000;
+   border-radius: 10px;
+   padding: 15px;
+   width: 250px;
+   text-align: center;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+ }
+ .pillar-box h3 {
+   margin-bottom: 10px;
+ }
+ .pillar-box p {
+   margin-bottom: 10px;
+ }
+ .pillar-box button {
+   background-color: #064b3b;
+   color: #fff;
+   border: none;
+   padding: 10px 15px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+ }
+ .pillar-box button:hover {
+   background-color: #056a4f;
+ }
+/* Daily Hadees and Ayat Section */
+.daily-section {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 20px;
+   padding: 50px 20px;
+   background-color: white;
+   text-align: center;
+}
+
+.daily-box {
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+   position: relative;
+}
+
+.hadees-box {
+   background-color: #f9f9f9;
+}
+
+.ayat-box {
+   background-color: #002b23;
+   color: white;
+}
+
+.badge {
+   position: absolute;
+   top: -10px;
+   left: 20px;
+   background-color: #002b1a;
+   color: white;
+   font-size: 12px;
+   padding: 5px 10px;
+   border-radius: 20px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.hadees-box .badge {
+   background-color: #002b1b;
+}
+
+.ayat-box .badge {
+   background-color: #ffffff;
+   color: #002b24;
+}
+
+.arabic {
+   font-size: 24px;
+   font-weight: bold;
+   margin: 10px 0;
+   font-family: "Amiri", serif;
+}
+
+.translation {
+   font-size: 16px;
+   margin: 10px 0;
+   color: #4f4f4f;
+}
+
+.ayat-box .translation {
+   color: white;
+}
+
+.reference {
+   font-size: 12px;
+   margin-bottom: 20px;
+   font-style: italic;
+   color: #888;
+}
+
+.share-btn {
+   padding: 10px 20px;
+   background-color: #002b21;
+   color: white;
+   border: none;
+   border-radius: 20px;
+   cursor: pointer;
+   font-weight: bold;
+   transition: background-color 0.3s;
+}
+
+.share-btn:hover {
+   background-color: #002b25;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f0f5f0;
+            color: #2c3e50;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+        .card {
+            background: #ffffff;
+            border: 1px solid #2c3e50;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card h2 {
+            color: #2c3e50;
+        }
+        .card p {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        a {
+            color: #27ae60;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    
+        body {
+         font-family: Arial, sans-serif;
+         background-color: #f4f4f9;
+         margin: 0;
+         padding: 0;
+     }
+
+     .quiz-container {
+         width: 60%;
+         margin: 50px auto;
+         background-color: white;
+         padding: 30px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         border-radius: 10px;
+     }
+     
+     h1, h2 {
+         text-align: center;
+     }
+     
+     .question {
+         margin-bottom: 20px;
+     }
+     
+     button {
+         display: block;
+         margin: 30px auto;
+         padding: 10px 20px;
+         font-size: 16px;
+         cursor: pointer;
+         background-color: #28a745;
+         color: white;
+         border: none;
+         border-radius: 5px;
+     }
+     
+     button:hover {
+         background-color: #218838;
+     }
+     
+     #next-level-btn {
+         background-color: #007bff;
+     }
+     
+     #next-level-btn:hover {
+         background-color: #0056b3;
+     }
+     body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .quiz-container {
+      width: 60%;
+      margin: 50px auto;
+      background-color: white;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+  }
+  
+  h1, h2 {
+      text-align: center;
+  }
+  
+  .question {
+      margin-bottom: 20px;
+  }
+  
+  button {
+      display: block;
+      margin: 30px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+  }
+  
+  button:hover {
+      background-color: #218838;
+  }
+  
+  #finish-btn {
+      background-color: #007bff;
+  }
+  
+  #finish-btn:hover {
+      background-color: #0056b3;
+  }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #064b3b;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+      color: #064b3b;
+    }
+    p {
+      margin: 10px 0;
+    }
+    ul {
+      margin: 10px 0;
+      padding: 0 20px;
+    }
+    ul li {
+      margin: 5px 0;
+    }
+    footer {
+      text-align: center;
+      margin: 20px 0;
+      color: #666;
+    }
+    .highlight {
+      color: #064b3b;
+      font-weight: bold;
+    }
+    
